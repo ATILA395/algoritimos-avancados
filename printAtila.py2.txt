@@ -1,0 +1,7 @@
+anos=int(input("digite o ano que voce nasceu:"))
+meses=int(input("digite o mes que voce nasceu:"))
+dias=int(input("digite o dia que nasceu:"))
+
+total_dias= (anos * 365) + (meses *  30)  + dias
+ 
+print("voce está vivo a ", total_dias, " dias.")
