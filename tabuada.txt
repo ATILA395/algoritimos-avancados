@@ -1,0 +1,51 @@
+def gerar_tabuada(inicio, fim, operacao):
+    # Validação da operação
+    if operacao not in ['+', '-', '*', '/']:
+        print("Operação inválida. Use '+', '-', '*' ou '/'.")
+        return
+
+    # Título da tabuada
+    print(f"\nTabuada de {operacao} de {inicio} a {fim}:\n")
+    
+    # Gerar a tabuada para cada combinação de números na faixa
+    for i in range(inicio, fim + 1):
+        for j in range(inicio, fim + 1):
+            if operacao == '+':
+                resultado = i + j
+                print(f"{i} + {j} = {resultado}")
+            elif operacao == '-':
+                resultado = i - j
+                print(f"{i} - {j} = {resultado}")
+            elif operacao == '*':
+                resultado = i * j
+                print(f"{i} * {j} = {resultado}")
+            elif operacao == '/':
+                # Evitar divisão por zero
+                if j != 0:
+                    resultado = i / j
+                    print(f"{i} / {j} = {resultado:.2f}")
+                else:
+                    print(f"{i} / {j} = Divisão por zero não permitida")
+        print()  # Linha em branco para separar as linhas da tabuada
+
+def main():
+    print("Bem-vindo ao gerador de tabuada dinâmica!")
+    
+    # Entrada de dados
+    try:
+        inicio = int(input("Digite o número inicial da faixa: "))
+        fim = int(input("Digite o número final da faixa: "))
+        
+        if fim < inicio:
+            print("O número final deve ser maior ou igual ao número inicial.")
+            return
+        
+        operacao = input("Digite a operação desejada (+, -, *, /): ")
+        
+        gerar_tabuada(inicio, fim, operacao)
+    
+    except ValueError:
+        print("Entrada inválida. Certifique-se de digitar números inteiros para a faixa e uma operação válida.")
+
+if __name__ == "__main__":
+    main()
