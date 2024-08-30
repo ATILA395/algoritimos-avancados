@@ -25,7 +25,7 @@ def calcular_idade(data_nascimento, data_atual):
     return anos, meses, dias
 
 # Exemplo de uso
-data_nascimento = datetime(2002, 10, 19)
+data_nascimento = datetime(1964, 12, 3)
 data_atual = datetime(2024, 8, 30)
 
 anos, meses, dias = calcular_idade(data_nascimento, data_atual)
