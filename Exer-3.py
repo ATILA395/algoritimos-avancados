@@ -1,27 +1,27 @@
 # Primeiro par de instruções
 
-# Instrução 1
+# Instrução A1
 resultado1 = (4/2) + (2/4)
 print("Resultado da instrução A1:", resultado1)
 
-# Instrução 2
+# Instrução A2
 A = 4/2 + 2/4
-print("Resultado da instrução A2:", A1)
+print("Resultado da instrução A2:", A)
 # Segundo par de instruções
 
-# Instrução 1
+# Instrução B1
 B1 = 4/(2+2)/4
 print("Resultado da instrução B1:", B1)
 
-# Instrução 2
+# Instrução B2
 B2 = 4/2 + 2/4
 print("Resultado da instrução B2:", B2)
 # Terceiro par de instruções
 
-# Instrução 1
+# Instrução C1
 C1 = (4+2)*2 - 4
-print("Resultado da instrução 1:", C1)
+print("Resultado da instrução C1:", C1)
 
-# Instrução 2
+# Instrução C2
 C2 = 4 + 2*2 - 4
-print("Resultado da instrução 2:", C2)
+print("Resultado da instrução C2:", C2)
